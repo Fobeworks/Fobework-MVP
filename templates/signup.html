@@ -1,0 +1,38 @@
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% include "header.html" %}
+    <style>
+        @media (max-width: 768px) {
+            .col-12 {
+                margin-top: 25%;
+            }
+            .img-thumbnail {
+                max-width: 100%;
+                height: 400px;
+                margin-left: 10%;
+            }
+        }
+    </style>
+
+
+<div class="container">
+    <div class="row" style="margin-top: 13%; margin-bottom: 5%;">
+        <h1 class="text-center">Sign Up</h1>
+
+      <div class="col-lg-8 col-md-10 mx-auto content">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+           <p>{{ message }}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+      </div>
+      <p class="text-center mt-4">Already have an Account <a href="/login">Login</a></p>
+    </div>
+  </div>
+    
+
+{% include "footer.html" %}
