@@ -1,44 +1,290 @@
 {% include "header.html" %}
 
 <div class="container career">
-    <h2 class="text-center mt-5 mb-5">Career Opportunities in Fobework</h2>
-    <div class="row">
 
-    <div class="col-md-7 col-lg-5 ">
-        <img src=" {{ url_for('static', filename='images/ben-kolde-bs2Ba7t69mM-unsplash.jpg')}}" class="img-thumbnail img-fluid" alt="">
-    </div>
+    <h2 class="text-center mt-5">Career Opportunities in Fobework</h2>
+    <h5 class="text-center mt-4 mb-5">Tech Roles and Non-Tech Roles for Career Portal</h5>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+          <div class="p-3 mb-2 bg-success text-white">
+           <p>{{ message }}</p>
+           </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    
+    <ol>
+        <li>
+            <b>Senior Full Stack Engineer</b>
+            <p>a. Description: As a Senior Full Stack Engineer at Fobework, you will play a critical role in developing our tech infrastructure. You will be responsible for designing, coding, testing, and deploying complex web and mobile applications.
+            </p>
+            <p>b. Qualifications:
+                <ul>
+                    <li>Bachelor's degree in Computer Science or a related field.
+                    </li>
+                    <li>Proven experience in full-stack development.</li>
+                    <li>Proficiency in programming languages such as JavaScript, Python, or Ruby.</li>
+                    <li>Familiarity with front-end and back-end technologies.</li>
+                    <li>Strong problem-solving skills and ability to work in a collaborative environment.
+                    </li>
+                   
+                </ul>
+            </p>
+        </li>
+        <li>
+           <b> Data Scientist </b>
+            <p>
+                a. Description: The Data Scientist role at Fobework involves analyzing large datasets, building predictive models, and extracting actionable insights. You will work on data-driven projects to support decision-making.
+            </p>
+            <p>
+                b. Qualifications:
+                <ul>
+                    <li>Master's or Ph.D. in Data Science, Statistics, or a related field.
+                    </li>
+                    <li>Proficiency in data analysis tools like Python or R.
+                    </li>
+                    <li>Experience with machine learning and statistical modeling.</li>
+                    <li>Strong communication skills for presenting findings.</li>
+                    
+                </ul>
+            </p>
+        </li>
+        <li>
+            <b>AI Expert</b>
+            <p>
+                a. Description: As an AI Expert, you will drive the development and implementation of AI solutions within Fobework's platform. You will work on projects related to machine learning, natural language processing, and computer vision.
+            </p>
+            <p>
+                b. Qualifications:
+                <ul>
+                    <li>Advanced degree in AI, Machine Learning, or Computer Science.</li>
+                    <li>Proven experience in AI development.</li>
+                    <li>Strong programming skills in languages like Python.</li>
+                    <li>Knowledge of deep learning frameworks like TensorFlow or PyTorch.</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <b>Product Manager</b>
+            <p>a. Description: The Product Manager at Fobework is responsible for defining product strategies, creating roadmaps, and overseeing product development. You will work closely with cross-functional teams to ensure successful product launches.
+            </p>
+            <p>
+                b. Qualifications:
+                <ul>
+                    <li>Bachelor's degree in Business, Computer Science, or a related field.</li>
+                    <li>Experience in product management, preferably in tech or startup environments.</li>
+                    <li>Strong project management skills.</li>
+                    <li>Ability to understand both tech and business aspects of a product.</li>
+                </ul>
+            </p>
+        </li>
+        <h5>Non-Tech Roles:</h5>
 
-    <div class="col-md-6 col-lg-6 p-5 mb-5">
-        <h5>List of Career Opportunities in Fobework</h5>
-        <ul class="list-group">
-            <li class="list-group-item"><b>FrontEnd</b></li>
-            <li class="list-group-item">React Native</li>
-            <li class="list-group-item">React js</li>
-            <li class="list-group-item">Redux</li>
-            <li class="list-group-item">Babel</li>
-            <li class="list-group-item">HTML5/CSS3</li>
-            <li class="list-group-item"><b>Backend</b></li>
-            <li class="list-group-item">Node js</li>
-            <li class="list-group-item">Express js</li>
-            <li class="list-group-item">MongoDB</li>
-            <li class="list-group-item">GraphQL</li>
-            <li class="list-group-item">RESTful API</li>
-            <li class="list-group-item">JWT (JSON Web Tokens)</li>
-            <li class="list-group-item"><b>DevOps</b></li>
-            <li class="list-group-item">Docker</li>
-            <li class="list-group-item">Kubernetes</li>
-            <li class="list-group-item">Jekins</li>
-            <li class="list-group-item">Amazon Web Services (AWS)</li>
-            <li class="list-group-item"><b>Mobile Development</b></li>
-            <li class="list-group-item">React Native</li>
-            <li class="list-group-item">Expo</li>
-            <li class="list-group-item"><b>Additional Technologies</b></li>
-            <li class="list-group-item">AI and Machine Learning Libraries</li>
-            <li class="list-group-item">Blockchain</li>
-            <li class="list-group-item">IoT Integration</li>
-          </ul>
+        <li>
+            <b>Business Development Manager</b>
+            <p>
+                a. Description: The Business Development Manager will identify and forge partnerships, seek investment opportunities, and help expand Fobework's ecosystem. This role involves building relationships and exploring growth strategies.
+            </p>
+
+            <p>
+                b. Qualifications:
+                <ul>
+                    <li>Bachelor's degree in Business, Marketing, or a related field.</li>
+                    <li>Proven experience in business development or sales.</li>
+                    <li>Strong negotiation and communication skills.</li>
+                    <li>Ability to identify market trends and growth opportunities.</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>Marketing Specialist</b>
+
+            <p>
+                a. Description: The Marketing Specialist will lead marketing campaigns, manage digital presence, and create content to promote Fobework. This role involves both online and offline marketing efforts.
+            </p>
+
+            <p>
+                b. Qualifications:
+                <ul>
+                    <li>Bachelor's degree in Marketing, Communications, or a related field.</li>
+                    <li>Experience in digital marketing and content creation.</li>
+                    <li>Familiarity with social media platforms and analytics.</li>
+                    <li>Creative thinking and strong copywriting skills.</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>Operations Manager</b>
+
+            <p>
+                a. Description: The Operations Manager will oversee the day-to-day activities at Fobework, ensuring smooth operations. This includes managing workspace logistics, resource allocation, and process improvements.
+            </p>
+
+            <p>
+                b. Qualifications:
+                <ul>
+                    <li>Bachelor's degree in Operations Management or a related field.</li>
+                    <li>Experience in operations management.</li>
+                    <li>Strong organizational and problem-solving skills.</li>
+                    <li>Attention to detail and ability to optimize processes.</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>Finance Analyst</b>
+            <p>
+                a. Description: The Finance Analyst role involves financial planning, budgeting, and analysis for Fobework. You will work to ensure fiscal responsibility and support financial decision-making.
+            </p>
+            <p>
+                b. Qualifications:
+
+                <ul>
+                    <li>Bachelor's degree in Finance, Accounting, or a related field.</li>
+                    <li>Experience in financial analysis and reporting.</li>
+                    <li>Proficiency in financial software and Excel.</li>
+                    <li>Analytical mindset and attention to financial details.</li>
+                
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>Customer Success Manager</b>
+
+            <p>
+                a. Description: The Customer Success Manager will focus on ensuring client satisfaction, retention, and growth. You will build strong client relationships, address concerns, and provide guidance on using Fobework's services effectively.
+            </p>
+            <p>
+                b. Qualifications:
+                <ul>
+                    <li>Bachelor's degree in Business, Customer Relations, or a related field.</li>
+                    <li>Proven experience in customer success or account management.</li>
+                    <li>Excellent communication and problem-solving skills.</li>
+                    <li>Ability to empathize with clients' needs and provide solutions.</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>HR Generalist</b>
+            <p>
+                a. Description: As an HR Generalist, you will oversee various human resources functions, including recruitment, onboarding, performance management, and compliance. You will help create a positive work environment and ensure HR policies are followed.
+            </p>
+            <p>b. Qualifications:
+                <ul>
+                    <li>Bachelor's degree in Human Resources or a related field.</li>
+                    <li>Experience in HR roles, preferably in tech or startup environments.</li>
+                    <li>Knowledge of HR laws and regulations.</li>
+                    <li>Strong interpersonal and organizational skills.</li>
+                </ul>
+            </p>
+        </li>
+    </ol>
+
+    <h2 class="text-center mt-4 mb-5">Comprehensive job roles, descriptions, and qualifications for key co-founder positions at Fobework:</h2>
+    <ol>
+        <li>
+            <b>CTO (Chief Technology Officer) </b>
+            <p>
+                Description: As the CTO, you will be the technical visionary and leader of Fobework, responsible for shaping the company's technology strategy and overseeing the development of all technical solutions. You will lead the tech team, make critical decisions on technology stack, and drive innovation.
+            </p>
+            <p>Qualifications:
+                <ul>
+                    <li>Bachelor’s or Master’s degree in Computer Science or a related field.</li>
+                    <li>Proven experience in leading tech teams and delivering scalable software products.</li>
+                    <li>Deep expertise in software development, architecture, and technology trends.</li>
+                    <li>Strong project management skills and experience with agile methodologies.</li>
+                    <li>Ability to align technical strategies with business goals.</li>
+                </ul>
+            </p>
+        </li>
+        
+        <li>
+            <b>CDO (Chief Design Officer)</b>
+
+            <p>
+                Description: As the CDO, you will be responsible for crafting the user experience and design strategy for Fobework's products. You will lead the design team, ensuring that our digital and physical spaces are not only functional but also aesthetically pleasing and user-centric.
+            </p>
+
+            <p>
+                Qualifications:
+
+                <ul>
+                    <li>Bachelor’s or Master’s degree in Design, Human-Computer Interaction, or a related field.</li>
+                    <li>Extensive experience in user experience (UX) and user interface (UI) design.</li>
+                    <li>Proven ability to create visually stunning and intuitive designs.</li>
+                    <li>Strong understanding of design thinking and user research methodologies.</li>
+                    <li>Experience managing design teams and fostering a design-centric culture.</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>CMO (Chief Marketing Officer)</b>
+            <p>
+                Description: As the CMO, you will lead Fobework's marketing efforts, shaping the company's brand identity, and driving demand for our services. You will develop and execute marketing strategies, build and manage marketing teams, and establish partnerships.
+            </p>
+            <p>
+                Qualifications:
+                <ul>
+                    <li>Bachelor’s or Master’s degree in Marketing, Business, or a related field.</li>
+                    <li>Proven track record in marketing leadership roles, preferably in tech or startups.</li>
+                    <li>Deep understanding of digital marketing, content strategy, and lead generation.</li>
+                    <li>Ability to analyze market trends and customer behavior.</li>
+                    <li>Exceptional communication and leadership skills.</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>CIO (Chief Innovation Officer)</b>
+            <p>
+                Description: As the CIO, you will lead innovation efforts at Fobework, identifying opportunities for disruptive technologies and strategies. You will manage R&D projects, partnerships, and explore emerging technologies to keep Fobework at the forefront of the industry.
+            </p>
+            <p>
+                Qualifications:
+                <ul>
+                    <li>Bachelor’s or Master’s degree in Innovation Management, Business, or a related field.
+                    </li>
+                    <li>Proven experience in innovation leadership roles.</li>
+                    <li>Strong analytical skills and the ability to identify emerging trends.</li>
+                    <li>Experience with technology scouting, partnerships, and prototyping.</li>
+                    <li>Excellent communication and leadership abilities.</li>
+                </ul>
+            </p>
+        </li>
+    </ol>
+
+    <p>
+        These co-founder roles are critical to Fobework's vision  for starups, and each individual will play a pivotal role in shaping the company's future. Candidates for these positions should share Fobework's vision and be passionate about driving innovation and growth in the startup ecosystem.
+
+    </p>
+
+    <h4 class="text-center">Shared Qualifications for All Roles:</h4>
+    <ul>
+        <li><b>Team Player:</b> Ability to work collaboratively with cross-functional teams.</li>
+        <li><b>Adaptability:</b> Willingness to embrace change and work in a fast-paced startup environment.</li>
+        <li><b>Problem-Solving:</b> Strong analytical and critical-thinking skills.
+        </li>
+        <li><b>Communication:</b> Excellent written and verbal communication skills.</li>
+        <li><b>Initiative:</b> Self-starter with the ability to take ownership of projects.</li>
+        <li><b>Passion:</b> Enthusiasm for Fobework's mission and commitment to innovation.
+        </li>
+    </ul>
+
+    <p>
+        Please note that while the qualifications provided here are general, specific job postings may have additional or unique requirements. Additionally, Fobework encourages diversity and inclusion and welcomes applicants from diverse backgrounds and experiences for all positions.
+
+    </p>
+    <div class="text-center">
+        <a href="/enrol_career" class="btn btn-primary btn-lg mb-5">Apply Now</a>
     </div>
-    </div>
+    
+   
 </div>
 
 {% include "footer.html" %}

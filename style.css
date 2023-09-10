@@ -1,0 +1,35 @@
+.bg-image {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
+}
+
+.footer-div {
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);     
+}
+.social-icon {
+    background-color: blue;
+}
+
+.hero {
+    padding-top: 10%;
+}
+
+.about1 {
+    margin-top: 15%;
+}
+
+.career {
+    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    .about1 {
+        margin-top: 40%;
+    }
+    .contact {
+        margin-top: 70%;
+    }
+}

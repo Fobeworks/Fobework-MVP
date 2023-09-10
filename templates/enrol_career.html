@@ -1,0 +1,25 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% include "header.html" %}
+<div class="container">
+    <div class="row" style="margin-top: 13%; margin-bottom: 5%;">
+        <h1 class="text-center">Career Form</h1>
+
+      <div class="col-lg-8 col-md-10 mx-auto content">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+          <div class="p-3 mb-2 bg-success text-white">
+           <p>{{ message }}</p>
+           </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+      </div>
+     
+    </div>
+  </div>
+
+
+
+{% include "footer.html" %}
